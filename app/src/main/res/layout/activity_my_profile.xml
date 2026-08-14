@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_profile"
+    android:background="@color/light_sky"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="My Profile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textSize="34sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="ID"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:startIconDrawable="@drawable/id_card">
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etProfileId"
+            android:inputType="textPostalAddress"
+            android:padding="16dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="FULL NAME"
+
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:startIconDrawable="@drawable/person_icon">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etProfileName"
+            android:inputType="textPersonName"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="USERNAME"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:startIconDrawable="@drawable/username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etProfileUsername"
+            android:inputType="text"
+            android:padding="16dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:startIconDrawable="@drawable/phone_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/etProfilePhoneNum"
+            android:padding="16dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="E-mail"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:startIconDrawable="@drawable/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etProfileEmail"
+            android:inputType="textEmailAddress"
+            android:padding="16dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivQrCode"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDelAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Delete Account "
+        android:backgroundTint="#9C27B0"
+
+        />
+
+
+
+</LinearLayout>

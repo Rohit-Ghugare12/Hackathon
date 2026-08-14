@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="16sp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#EBF4FD"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="#E8EFE9"
+                android:scaleType="fitCenter"
+                android:src="@drawable/not_found_image"
+                android:id="@+id/ivProductImage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/tvProductListName"
+                    android:text="product_name"
+                    android:textColor="#1A1A1A"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvProductListCategory"
+                    android:text="product_category"
+                    android:textColor="#7A7A7A"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tvProductListPrise"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="product_price"
+                    android:textColor="#2E5A44"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+

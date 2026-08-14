@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragement.Categories_Fragement">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/isImageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="3000"
+        app:iss_period="3000"
+        app:iss_selected_dot="@drawable/default_selected_dot"
+        app:iss_text_align="CENTER"
+        app:iss_text_color="#000000"
+        app:iss_unselected_dot="@drawable/default_unselected_dot" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:requiresFadingEdge="horizontal"
+        android:elevation="16sp"
+        android:id="@+id/svCategorySearchProduct"
+        android:iconifiedByDefault="false"
+        android:queryHint="Enter Product Name"
+
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_bg"
+        android:padding="8dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvCategoryAllproduct"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCategoryNoProductFound"
+        android:text="Producty Not Available"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>

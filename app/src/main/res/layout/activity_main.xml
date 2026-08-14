@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FAF8F1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivSplashLogo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/my_logo" />
+
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WOODLAND"
+        android:textColor="#36590F"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LET'S BUILD"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-condensed" />
+
+  </LinearLayout>
